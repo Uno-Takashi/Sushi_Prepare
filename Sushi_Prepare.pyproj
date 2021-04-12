@@ -30,6 +30,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="manage.py" />
+    <Compile Include="sushi_app\admin.py" />
+    <Compile Include="sushi_app\apps.py" />
+    <Compile Include="sushi_app\migrations\__init__.py" />
+    <Compile Include="sushi_app\models.py" />
+    <Compile Include="sushi_app\tests.py" />
+    <Compile Include="sushi_app\views.py" />
+    <Compile Include="sushi_app\__init__.py" />
     <Compile Include="Sushi_Prepare\__init__.py" />
     <Compile Include="Sushi_Prepare\settings.py" />
     <Compile Include="Sushi_Prepare\urls.py" />
@@ -37,8 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="sushi_app\templates\sushi_app\index.html" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="sushi_app\" />
+    <Folder Include="sushi_app\migrations\" />
+    <Folder Include="sushi_app\templates\" />
+    <Folder Include="sushi_app\templates\sushi_app\" />
     <Folder Include="Sushi_Prepare\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
